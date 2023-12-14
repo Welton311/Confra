@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo em Tela Cheia</title>
+    <style>
+        body {
+            background-color: black; /* Adicione o ponto e vírgula aqui */
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Altura da viewport */
+        }
+
+        video {
+            width: 100vw; /* Alterado para 100vw para ocupar 100% da largura da viewport */
+            height: 100vh; /* Mantido para ocupar 100% da altura da viewport */
+        }
+    </style>
+</head>
+<body>
+
+<video autoplay loop muted id="meuVideo">
+    <source src="confra.mp4" type="video/mp4">
+    Desculpe, seu navegador não suporta a tag de vídeo.
+</video>
+
+</body>
+</html>
